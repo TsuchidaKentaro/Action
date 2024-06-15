@@ -1,14 +1,9 @@
-// src/app.ts
+// app.ts
 
-import express, { Request, Response } from 'express';
+function throwError(): string {
+  // 例としてエラーを発生させる処理を記述
+  throw new Error("This is a deliberate error!");
+}
 
-const app = express();
-const port = 3000;
+throwError(); // エラーを発生させる関数を呼び出し
 
-app.get('/', (req: Request, res: Response) => {
-  res.send('Hello World from Express.js with TypeScript!');
-});
-
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
