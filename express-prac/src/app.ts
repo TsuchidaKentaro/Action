@@ -7,3 +7,5 @@ function throwError(): string {
 
 throwError(); // エラーを発生させる関数を呼び出し
 
+
+
