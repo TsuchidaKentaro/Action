@@ -1,15 +1,7 @@
 "use strict";
-// src/app.ts
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = __importDefault(require("express"));
-const app = (0, express_1.default)();
-const port = 3000;
-app.get('/', (req, res) => {
-    res.send('Hello World from Express.js with TypeScript!');
-});
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
-});
+// app.ts
+function throwError() {
+    // 例としてエラーを発生させる処理を記述
+    throw new Error("This is a deliberate error!");
+}
+throwError(); // エラーを発生させる関数を呼び出し
