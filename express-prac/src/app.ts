@@ -5,12 +5,10 @@ import express, { Request, Response } from 'express';
 const app = express();
 const port = 3000;
 
-// ルートへのGETリクエストに対するレスポンス
 app.get('/', (req: Request, res: Response) => {
-  res.send('バックエンド側をエクスプレスで作る');
+  res.send('Hello World from Express.js with TypeScript!');
 });
 
-// サーバーをポート3000で起動
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
